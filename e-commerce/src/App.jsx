@@ -5,7 +5,7 @@ function App() {
   return (
     <>
       <div className="min-h-screen bg-red-500 text-white text-center text-4xl">
-        Tailwind artık %100 çalışıyor! 🔥
+        🔥 E COMMERCE ÇILGINLIĞI 🔥
       </div>
     </>
   );
