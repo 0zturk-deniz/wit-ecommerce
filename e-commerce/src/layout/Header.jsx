@@ -23,7 +23,7 @@ const Header = () => {
       </div>
 
       {menuOpen && (
-        <div className="absolute top-full left-0 w-full bg-white flex flex-col items-center mt-8 space-y-8 text-2xl font-light tracking-wider text-[#737373]">
+        <div className="absolute top-[100%] left-0 w-full bg-white flex flex-col items-center space-y-8 text-2xl font-light tracking-wider text-[#737373]">
           <a href="#">Home</a>
           <a href="#">Product</a>
           <a href="#">Pricing</a>
