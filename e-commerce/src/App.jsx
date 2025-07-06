@@ -1,14 +1,15 @@
 import "./App.css";
 import "./index.css";
+import Footer from "./layout/Footer";
 import Header from "./layout/Header";
+import PageContent from "./layout/PageContent";
 
 function App() {
   return (
     <>
       <Header />
-      <div className="min-h-screen bg-red-500 text-white text-center text-4xl">
-        🔥 E COMMERCE ÇILGINLIĞI 🔥
-      </div>
+      <PageContent />
+      <Footer />
     </>
   );
 }
