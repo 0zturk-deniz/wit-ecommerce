@@ -57,13 +57,13 @@ const Header = () => {
         </div>
       </div>
 
-      <div className="px-12 flex items-center justify-between py-4">
+      <div className="relative px-12 flex items-center justify-between py-4">
         <h1 className="text-2xl text-[#252B42] font-medium tracking-wider mr-16">
           Bandage
         </h1>
 
         <div className="hidden md:flex items-center justify-between w-full">
-          <nav className="flex gap-4 text-sm text-[#737373]">
+          <nav className="flex gap-4 text-sm font-medium text-[#737373]">
             <a>Home</a>
             <a>Shop</a>
             <a>About</a>
@@ -75,7 +75,7 @@ const Header = () => {
           <div className="flex gap-8">
             <div className="flex items-center">
               <User className="stroke-[#23A6F0] w-4 h-4" />
-              <p className="text-[#23A6F0] text-sm font-bold">
+              <p className="text-[#23A6F0] text-sm font-medium">
                 Login / Register
               </p>
             </div>
@@ -91,9 +91,7 @@ const Header = () => {
           <ShoppingCart className="w-6 h-6" />
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className=""
-            block
-            md:hidden
+            className="block md:hidden z-50 relative"
           >
             {menuOpen ? <X /> : <Menu className="w-6 h-6" />}
           </button>
