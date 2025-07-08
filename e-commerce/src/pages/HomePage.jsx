@@ -11,10 +11,11 @@ const HomePage = () => {
         <PageContent>
           <EditorsPick />
         </PageContent>
-        <PageContent>
-          <BestsellerProducts />
-        </PageContent>
       </section>
+      <PageContent>
+        <BestsellerProducts />
+      </PageContent>
+      <Carrousel />
     </div>
   );
 };

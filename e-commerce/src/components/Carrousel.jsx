@@ -18,13 +18,13 @@ const slides = [
 
 const Carrousel = () => {
   return (
-    <div>
+    <div className="relative">
       <div className="absolute inset-0 z-10 flex items-center justify-between">
         <button>
-          <ChevronLeft strokeWidth="{1}" color="white" className="w-14 h-14" />
+          <ChevronLeft strokeWidth={1} color="white" className="w-14 h-14" />
         </button>
         <button>
-          <ChevronRight strokeWidth="{1}" color="white" className="w-14 h-14" />
+          <ChevronRight strokeWidth={1} color="white" className="w-14 h-14" />
         </button>
       </div>
       <Swiper
