@@ -1,10 +1,9 @@
-import carouselItem from "../assets/images/carousel-item.png";
-
+import cta from "../assets/images/cta.png";
 const CtaSection = () => {
   return (
     <section className="grid grid-cols-2 gap-24 px-20">
       <div className="aspect-square w-full">
-        <img src={carouselItem} className="w-full h-full object-cover" />
+        <img src={cta} className="w-full h-full object-cover" />
       </div>
 
       <div className="flex flex-col justify-center">

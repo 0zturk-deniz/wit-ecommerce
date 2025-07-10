@@ -1,4 +1,7 @@
-import carouselItem from "../assets/images/carousel-item.png";
+import ep1 from "../assets/images/ep1.png";
+import ep2 from "../assets/images/ep2.png";
+import ep3 from "../assets/images/ep3.png";
+import ep4 from "../assets/images/ep4.png";
 
 const EditorsPick = () => {
   return (
@@ -10,7 +13,7 @@ const EditorsPick = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 py-8">
         <div className="relative aspect-square w-full">
-          <img src={carouselItem} className="w-full h-full object-cover" />
+          <img src={ep1} className="w-full h-full object-cover" />
           <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
             MEN
           </button>
@@ -18,7 +21,7 @@ const EditorsPick = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
           <div className="relative">
-            <img src={carouselItem} className="h-full object-cover" />
+            <img src={ep2} className="h-full object-cover" />
             <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
               WOMEN
             </button>
@@ -26,14 +29,14 @@ const EditorsPick = () => {
 
           <div className="grid grid-rows-2 gap-3">
             <div className="relative">
-              <img src={carouselItem} className="h-full object-cover" />
+              <img src={ep3} className="h-full object-cover" />
               <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
                 ACCESSORIES
               </button>
             </div>
 
             <div className="relative">
-              <img src={carouselItem} className="h-full object-cover" />
+              <img src={ep4} className="h-full object-cover" />
               <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
                 KIDS
               </button>
