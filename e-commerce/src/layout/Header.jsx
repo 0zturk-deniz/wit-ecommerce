@@ -58,9 +58,7 @@ const Header = () => {
       </div>
 
       <div className="relative px-12 flex items-center justify-between py-4">
-        <h1 className="text-2xl text-[#252B42] font-medium tracking-wider mr-16">
-          Bandage
-        </h1>
+        <h1 className="text-xl text-[#252B42] font-semibold mr-16">Bandage</h1>
 
         <div className="hidden md:flex items-center justify-between w-full">
           <nav className="flex gap-4 text-sm font-medium text-[#737373]">

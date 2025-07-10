@@ -1,15 +1,18 @@
-import BestsellerProductCard from "../components/BestsellerProducts";
+import BestsellerProductCard from "../components/BestsellerProductCard";
 import Card from "../components/Card";
 import Carrousel from "../components/Carrousel";
 import CtaSection from "../components/CtaSection";
 import EditorsPick from "../components/EditorsPick";
+import { bestSellerProductData } from "../data/bestsellerProductData";
+import { cardData } from "../data/cardData";
+import { heroSlides, promoSlides } from "../data/slidesData";
 import PageContent from "../layout/PageContent";
 
 const HomePage = () => {
   return (
     <div>
       <section>
-        <Carrousel />
+        <Carrousel slides={heroSlides} />
       </section>
       <section className="bg-[#FAFAFA] w-full ">
         <PageContent>
@@ -26,19 +29,14 @@ const HomePage = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-4 sm:grid-rows-2 gap-6">
-            <BestsellerProductCard />
-            <BestsellerProductCard />
-            <BestsellerProductCard />
-            <BestsellerProductCard />
-            <BestsellerProductCard />
-            <BestsellerProductCard />
-            <BestsellerProductCard />
-            <BestsellerProductCard />
+            {bestSellerProductData.map((card, index) => (
+              <BestsellerProductCard key={index} {...card} />
+            ))}
           </div>
         </PageContent>
       </section>
       <section>
-        <Carrousel />
+        <Carrousel slides={promoSlides} />
       </section>
       <section>
         <CtaSection />
@@ -58,9 +56,9 @@ const HomePage = () => {
             </div>
 
             <div className="flex gap-2 pt-4">
-              <Card />
-              <Card />
-              <Card />
+              {cardData.map((card, index) => (
+                <Card key={index} {...card} />
+              ))}
             </div>
           </div>
         </PageContent>
