@@ -1,4 +1,5 @@
 import {
+  ChevronDown,
   Facebook,
   Heart,
   Instagram,
@@ -61,21 +62,50 @@ const Header = () => {
         <h1 className="text-xl text-[#252B42] font-semibold mr-16">Bandage</h1>
 
         <div className="hidden md:flex items-center justify-between w-full">
-          <nav className="flex gap-4 text-sm font-medium text-[#737373]">
-            <a>Home</a>
-            <a>Shop</a>
-            <a>About</a>
-            <a>Blog</a>
-            <a>Contact</a>
-            <a>Pages</a>
+          <nav className="flex gap-4 text-sm font-medium text-[#737373] relative group">
+            <a href="#">Home</a>
+            <div className="relative group">
+              <a
+                href="#"
+                className="flex items-center gap-1 cursor-pointer group-hover:text-[#23A6F0]"
+              >
+                Shop <ChevronDown className="w-3 h-3" />{" "}
+              </a>
+              <div className="absolute left-0 top-full mt-2 bg-white shadow-lg p-6 hidden group-hover:grid grid-cols-2 gap-12 z-40 min-w-[300px]">
+                <div className="flex flex-col gap-2 text-[#737373] text-sm">
+                  <h3 className="text-black font-semibold pb-6">Kadın</h3>
+                  <a href="#">Bags</a>
+                  <a href="#">Belts</a>
+                  <a href="#">Cosmetics</a>
+                  <a href="#">Bags</a>
+                  <a href="#">Hats</a>
+                </div>
+                <div className="flex flex-col gap-2 text-[#737373] text-sm">
+                  <h3 className="text-black font-semibold pb-6">Erkek</h3>
+                  <a href="#">Bags</a>
+                  <a href="#">Belts</a>
+                  <a href="#">Cosmetics</a>
+                  <a href="#">Bags</a>
+                  <a href="#">Hats</a>
+                </div>
+              </div>
+            </div>
+            <a href="#">About</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+            <a href="#">Pages</a>
           </nav>
 
           <div className="flex gap-8">
             <div className="flex items-center">
               <User className="stroke-[#23A6F0] w-4 h-4" />
-              <p className="text-[#23A6F0] text-sm font-medium">
-                Login / Register
-              </p>
+              <a href="#" className="text-[#23A6F0] text-sm font-medium">
+                Login
+              </a>
+              <span className="text-[#23A6F0] text-sm font-medium">/</span>
+              <a href="#" className="text-[#23A6F0] text-sm font-medium">
+                Register
+              </a>
             </div>
             <Search className="stroke-[#23A6F0] w-4 h-4" />
             <ShoppingCart className="stroke-[#23A6F0] w-4 h-4" />
