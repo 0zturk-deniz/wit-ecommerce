@@ -12,7 +12,7 @@ const EditorsPick = () => {
       </p>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 py-8">
-        <div className="relative aspect-square w-full">
+        <div className="relative aspect-[2/3] md:aspect-auto w-full">
           <img src={ep1} className="w-full h-full object-cover" />
           <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
             MEN
@@ -20,22 +20,22 @@ const EditorsPick = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-          <div className="relative">
-            <img src={ep2} className="h-full object-cover" />
+          <div className="relative aspect-[2/3] md:aspect-auto w-full">
+            <img src={ep2} className="w-full h-full object-cover" />
             <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
               WOMEN
             </button>
           </div>
 
           <div className="grid grid-rows-2 gap-3">
-            <div className="relative">
+            <div className="relative aspect-[2/3] md:aspect-auto w-full">
               <img src={ep3} className="h-full object-cover" />
               <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
                 ACCESSORIES
               </button>
             </div>
 
-            <div className="relative">
+            <div className="relative aspect-[2/3] md:aspect-auto w-full">
               <img src={ep4} className="h-full object-cover" />
               <button className="absolute bottom-4 left-4  bg-white text-[#252B42] font-bold px-4 py-2 text-sm">
                 KIDS
