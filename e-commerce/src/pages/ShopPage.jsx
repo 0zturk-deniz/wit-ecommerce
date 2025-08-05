@@ -2,11 +2,15 @@ import PageContent from "../layout/PageContent";
 import CategoryBanners from "../components/CategoryBanner";
 import { categoryBannerData } from "../data/categoryBannerData";
 import BreadCrumbs from "../components/BreadCrumbs";
+import ShopToolbar from "../components/ShopToolbar";
+import BestsellerProductCard from "../components/BestsellerProductCard";
+import { bestSellerProductData } from "../data/bestsellerProductData";
+import Pagination from "../components/Pagination";
 
 const ShopPage = () => {
   return (
     <div>
-      <section>
+      <section className="bg-[#FAFAFA] py-8">
         <PageContent>
           <div className="flex justify-between items-center content-center mb-8">
             <h2 className="text-xl font-semibold">Shop</h2>
@@ -24,6 +28,19 @@ const ShopPage = () => {
           </div>
         </PageContent>
       </section>
+      <PageContent>
+        <ShopToolbar />
+      </PageContent>
+      <PageContent>
+        <div className="grid grid-cols-1 sm:grid-cols-4 sm:grid-rows-2 gap-6">
+          {bestSellerProductData.map((card, index) => (
+            <BestsellerProductCard key={index} {...card} />
+          ))}
+        </div>
+      </PageContent>
+      <PageContent>
+        <Pagination />
+      </PageContent>
     </div>
   );
 };
