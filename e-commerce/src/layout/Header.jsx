@@ -91,10 +91,10 @@ const Header = () => {
                 </div>
               </div>
             </div>
-            <a href="#">About</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-            <a href="#">Pages</a>
+            <Link to="/about">About</Link>
+            <Link to="/blog">Blog</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/pages">Pages</Link>
           </nav>
 
           <div className="flex gap-8">
